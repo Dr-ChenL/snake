@@ -1,0 +1,4 @@
+pip install -r requirements.txt
+imgaug==0.2.9
+
+报错： imageio requires Python ">=3.5" but the running Python is 2.7.13
