@@ -2,3 +2,19 @@ pip install -r requirements.txt
 imgaug==0.2.9
 
 报错： imageio requires Python ">=3.5" but the running Python is 2.7.13
+==解决方法===
+参考链接：https://blog.csdn.net/weixin_44877226/article/details/108400628
+Linux里面默认安装的是Python is 2.7.13
+需要把Python切换到3以上版本
+
+之后输入：cd /usr/bin/
+/usr/bin# ls -l | grep python
+查看Python信息
+
+再输入这两个命令：
+sudo rm -rf python
+sudo ln -s /usr/bin/python3 /usr/bin/python
+
+之后查看一下Python版本
+
+
