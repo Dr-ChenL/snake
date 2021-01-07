@@ -6,17 +6,17 @@ imgaug==0.2.9
 参考链接：https://blog.csdn.net/weixin_44877226/article/details/108400628
 Linux里面默认安装的是Python is 2.7.13
 需要把Python切换到3以上版本
-
+![pro1](images/pro1.png)
 之后输入：cd /usr/bin/
 /usr/bin# ls -l | grep python
 查看Python信息
-
+![pro2](images/pro2.png)
 再输入这两个命令：
 sudo rm -rf python
 sudo ln -s /usr/bin/python3 /usr/bin/python
-
+![pro3](images/pro3.png)
 之后查看一下Python版本
-
+![pro4](images/pro4.png)
 
 数据集配置
 1.下载
