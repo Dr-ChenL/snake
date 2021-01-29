@@ -5,9 +5,10 @@ from lib.datasets import make_data_loader
 from lib.utils.net_utils import load_model, save_model, load_network
 from lib.evaluators import make_evaluator
 import torch.multiprocessing
-
+# 导入必要的库和包
 
 def train(cfg, network):
+    # 训练函数
     trainer = make_trainer(cfg, network)
     optimizer = make_optimizer(cfg, network)
     scheduler = make_lr_scheduler(cfg, optimizer)
@@ -35,6 +36,7 @@ def train(cfg, network):
 
 
 def test(cfg, network):
+    # 测试函数
     trainer = make_trainer(cfg, network)
     val_loader = make_data_loader(cfg, is_train=False)
     evaluator = make_evaluator(cfg)
